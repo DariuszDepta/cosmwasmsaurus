@@ -6,7 +6,6 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'CosmWasm Docs',
-  tagline: 'The Definitive Guide to CosmWasm Smart Contract Development',
   favicon: 'img/cosmwasm-small.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
