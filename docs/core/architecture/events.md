@@ -18,7 +18,7 @@ Some important details about the keys:
 
 By default, CosmWasm emits the `wasm` event to which you can add attributes like so:
 
-```Rust title="wasm_event.rs"
+```rust title="wasm_event.rs"
 let response: Response<Empty> = Response::new()
     .add_attribute("custom_attribute", "value");
 ```
@@ -35,7 +35,7 @@ Note that those custom events will be prefixed with '**wasm-**' by the runtime.
 
 :::
 
-```Rust title="custom_event.rs"
+```rust title="custom_event.rs"
 let event = Event::new("custom_event")
     .add_attribute("custom_attribute", "value");
 

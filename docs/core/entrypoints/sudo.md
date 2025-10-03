@@ -15,7 +15,7 @@ and instead usually provided by some sort of chain SDK.
 
 ## Definition
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn sudo(
     deps: DepsMut, 

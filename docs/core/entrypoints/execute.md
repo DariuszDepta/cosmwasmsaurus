@@ -12,7 +12,7 @@ or add a user to a lottery. Anything that might modify the state of the contract
 
 ## Definition
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn execute(
     deps: DepsMut,

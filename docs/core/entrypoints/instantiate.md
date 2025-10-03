@@ -20,7 +20,7 @@ It is **NOT** a singleton class.
 
 ## Definition
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn instantiate(
     deps: DepsMut,

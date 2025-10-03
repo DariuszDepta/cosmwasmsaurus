@@ -16,7 +16,7 @@ To properly document these return values, you'll want to define them in your sch
 
 This is where the `cosmwasm_schema::QueryResponses` derive macro comes in.
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 #[cw_serde]
 struct GreetResponse {
   message: String,
@@ -42,7 +42,7 @@ so you can easily generate, for example, TypeScript types for your contract clie
 
 ## Definition
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn query(
     deps: Deps,

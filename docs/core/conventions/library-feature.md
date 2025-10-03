@@ -9,7 +9,7 @@ compile-time feature. The feature is conventionally called `library`.
 
 So instead of using the `#[entry_point]` macro directly, you should do this:
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn instantiate(
     deps: DepsMut,

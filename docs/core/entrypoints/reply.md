@@ -33,7 +33,7 @@ For more info, check the page about [transactions].
 
 :::
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 const CONTRACT_ADDR: &str = "other_contract";
 const SUBMSG_ID: u64 = 1; // This is a unique identifier so we can associate a reply with a specific submessage. It can be any numeric value.
 
@@ -63,7 +63,7 @@ pub fn execute(deps: DepsMut, env: Env, msg: ExecuteMsg) -> StdResult<Response> 
 
 ## Definition
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn reply(
     deps: DepsMut, 

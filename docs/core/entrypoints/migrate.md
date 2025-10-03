@@ -42,7 +42,7 @@ That's what you do in the **migrate** entrypoint. You transform the structure of
 
 For CosmWasm `v2.2.0` and newer, the new migrate info feature can be used:
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 const MIGRATE_VERSION: u64 = 2;
 
 #[cfg_attr(not(feature = "library"), entry_point)]
@@ -84,7 +84,7 @@ pub fn migrate(deps: DepsMut, env: Env, msg: MigrateMsg, migrate_info: MigrateIn
 
 For CosmWasm versions before `v2.2.0` the old method looks like this:
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 const STATE_VERSION: &str = "v2";
 const CONTRACT_NAME: &str = "my_contract";
 
@@ -116,7 +116,7 @@ pub fn migrate(deps: DepsMut, env: Env, msg: MigrateMsg) -> StdResult<Response> 
 
 To get the additional migrate info, the new signature can be used (CosmWasm `v2.2.0` and newer):
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 const MIGRATE_VERSION: u64 = 2;
 
 #[cfg_attr(not(feature = "library"), entry_point)]
@@ -133,7 +133,7 @@ pub fn migrate(
 
 The legacy CosmWasm (before version `v2.2.0`) migrate entrypoint function signature is defined like this:
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 #[cfg_attr(not(feature = "library"), entry_point)]
 pub fn migrate(
     deps: DepsMut,

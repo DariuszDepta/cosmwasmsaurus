@@ -11,7 +11,7 @@ to dispatch based on the message type.
 The most common way to do this is to use an enum to represent the different message types and then
 match on that enum in the endpoint.
 
-```Rust title="contract.rs"
+```rust title="contract.rs"
 #[cw_serde]
 enum ExecuteMsg {
     Add { value: i32 },
