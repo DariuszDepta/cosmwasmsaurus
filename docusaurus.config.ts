@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'CosmWasm Docs',
+  title: 'CosmWasm',
   favicon: 'img/cosmwasm-small.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -66,7 +66,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'CosmWasm Docs',
+      title: 'CosmWasm',
       logo: {
         alt: 'CosmWasm Logo',
         src: 'img/cosmwasm.svg',
