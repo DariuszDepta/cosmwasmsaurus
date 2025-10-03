@@ -26,18 +26,22 @@ and it automatically generates code that communicates to the VM: "Hey! This is a
 use it when needed!"
 
 :::tip
+
 When defining an entrypoint, it is important to use the correct types for the parameters and
 return type. Incorrect types will cause errors when trying to call the contract.
 
 In the following sections we will take a look at all possible entrypoints, including the
 correct function signature.
+
 :::
 
 :::tip
+
 Even though the sections will show you to use `#[entry_point]`, it is recommended to define your
 endpoints as `#[cfg_attr(not(feature = "library"), entry_point)]`.
 
 The reason behind that is that it allows you to reuse your contract as a library.
+
 :::
 
 ```rust
