@@ -1,6 +1,5 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -13,8 +12,8 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">CosmWasm Documentation</Heading>
-        <p className="hero__subtitle">The Definitive Guide to CosmWasm<br/>Smart Contract Development</p>
+        <Heading as="h1" className="hero__title">CosmWasm Docs</Heading>
+        <p className="hero__subtitle">The definitive guide to CosmWasm smart contract development</p>
       </div>
     </header>
   );

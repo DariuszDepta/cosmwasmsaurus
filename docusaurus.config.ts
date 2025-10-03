@@ -20,10 +20,12 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  trailingSlash: false,
 
   // GitHub pages deployment config. If you aren't using GitHub pages, you don't need these.
   organizationName: 'cosmwasm',       // Usually your GitHub organization or username.
   projectName: 'cosmwasm.github.io',  // Usually your repository name.
+  deploymentBranch: 'main',
 
   onBrokenLinks: 'throw',
 
@@ -81,7 +83,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -157,6 +159,7 @@ const config: Config = {
       integrity: 'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
       crossorigin: 'anonymous',
     },
+    'https://fonts.googleapis.com/css2?family=Iceland&display=swap'
   ],
 };
 

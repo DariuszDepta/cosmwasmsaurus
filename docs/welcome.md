@@ -4,13 +4,6 @@ sidebar_position: 1
 
 # Welcome
 
-[x/wasm]: https://github.com/CosmWasm/wasmd/tree/main/x/wasm
-[Cosmos SDK]: https://docs.cosmos.network/
-[IBC]: https://www.ibcprotocol.dev/
-[documentation repository]: https://github.com/CosmWasm/cosmwasm.github.io
-
-# Welcome
-
 The [x/wasm] module, the root of CosmWasm, is a [Cosmos SDK] module enabling smart contracts
 to execute on the CosmWasm virtual machine. CosmWasm itself refers to the whole ecosystem
 built around it with a mission to make smart contract development easy and reliable.
@@ -45,3 +38,8 @@ If there is something you remember being here in the old documentation, you can 
 at https://github.com/CosmWasm/docs-deprecated. Remember that the old documentation is deprecated,
 mostly outdated, and will not be maintained. We would appreciate any GitHub issues about missing
 parts in the [documentation repository].
+
+[x/wasm]: https://github.com/CosmWasm/wasmd/tree/main/x/wasm
+[Cosmos SDK]: https://docs.cosmos.network/
+[IBC]: https://www.ibcprotocol.dev/
+[documentation repository]: https://github.com/CosmWasm/cosmwasm.github.io
