@@ -26,9 +26,9 @@ export default function Home(): ReactNode {
     <Layout
       title={`${siteConfig.title}`}
       description="Official CosmWasm documentation">
-      <HomepageHeader />
+      <HomepageHeader/>
       <main>
-        <HomepageFeatures />
+        <HomepageFeatures/>
       </main>
     </Layout>
   );
