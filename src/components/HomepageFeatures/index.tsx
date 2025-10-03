@@ -12,7 +12,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
     {
         title: 'Security',
-        Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+        Svg: require('@site/static/img/cosmwasm-small.svg').default,
         description: (
             <>
                 CosmWasm aims to address many of the security issues present in Ethereum/Solidity.
@@ -27,7 +27,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: 'Testing',
-        Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+        Svg: require('@site/static/img/cosmwasm-small.svg').default,
         description: (
             <>
                 Unit testing in Solidity can be challenging due to the unique characteristics
@@ -43,7 +43,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: 'Performance',
-        Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+      Svg: require('@site/static/img/cosmwasm-small.svg').default,
         description: (
             <>
                 CosmWasm is designed to handle high transaction throughput, and can quickly process several
@@ -60,7 +60,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: 'Composability',
-        Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        Svg: require('@site/static/img/cosmwasm-small.svg').default,
         description: (
             <>
                 CosmWasm provides the ability to compose smart contracts, similar to Ethereum, but with additional
@@ -75,7 +75,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: 'Flexibility',
-        Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        Svg: require('@site/static/img/cosmwasm-small.svg').default,
         description: (
             <>
                 In Ethereum, there is no method to compose across multiple chains or migrate a project to another blockchain.
@@ -89,7 +89,7 @@ const FeatureList: FeatureItem[] = [
     },
     {
         title: 'Interoperability',
-        Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+        Svg: require('@site/static/img/cosmwasm-small.svg').default,
         description: (
             <>
                 Built for a multi-chain, cross-chain world, and deeply integrated with Inter Blockchain Communication.
