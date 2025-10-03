@@ -74,7 +74,7 @@ const config: Config = {
       title: 'CosmWasm',
       logo: {
         alt: 'CosmWasm Logo',
-        src: 'img/cosmwasm.svg',
+        src: 'img/cosmwasm-small.svg',
       },
       items: [
         {
