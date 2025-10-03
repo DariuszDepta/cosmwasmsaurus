@@ -12,7 +12,7 @@ In our case, these operations are invocations of contract entrypoints. If one of
 the chain fails, the whole transaction is usually rolled back. Failing in this context means that
 the contract entrypoint returns an error or panics.
 
-## Dispatching Submessages
+## Dispatching submessages
 
 Now let's move onto the `messages` field of the
 [`Response`](https://docs.rs/cosmwasm-std/latest/cosmwasm_std/struct.Response.html). Some contracts

@@ -2,10 +2,8 @@
 
 Entrypoints are where your contract can be called from the outside world. You can equate that to
 your **main** function in C, Rust, Java, etc. However, there is one small difference: in CosmWasm,
-you have multiple of these entrypoints, each one different from the last.
-
-In this section we want to give you a quick overview of all the entrypoints and when they are
-called.
+you have multiple of these entrypoints, each one different from the last. In this section we want
+to give you a quick overview of all the entrypoints and when they are called.
 
 :::tip
 
@@ -29,18 +27,8 @@ use it when needed!"
 
 When defining an entrypoint, it is important to use the correct types for the parameters and
 return type. Incorrect types will cause errors when trying to call the contract.
-
 In the following sections we will take a look at all possible entrypoints, including the
 correct function signature.
-
-:::
-
-:::tip
-
-Even though the sections will show you to use `#[entry_point]`, it is recommended to define your
-endpoints as `#[cfg_attr(not(feature = "library"), entry_point)]`.
-
-The reason behind that is that it allows you to reuse your contract as a library.
 
 :::
 
@@ -57,6 +45,9 @@ pub fn instantiate(
 }
 ```
 
+Check the [Library feature](../conventions/library-feature) chapter to learn why have used
+`#[cfg_attr(not(feature = "library"), entry_point)]` instead of simple `#[entry_point]`.
+
 ## Entrypoint parameters
 
 Entrypoints have a few parameters (as you can see above), some of them are predefined by
@@ -65,7 +56,7 @@ Entrypoints have a few parameters (as you can see above), some of them are prede
 Here we go over the different predefined types the standard library provides, and how you can define
 your own types.
 
-### Predefined types
+### Predefined parameter types
 
 #### `Deps`/`DepsMut`
 

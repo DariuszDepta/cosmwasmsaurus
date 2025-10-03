@@ -12,7 +12,7 @@ memory takes ~45 µs compared to 1.5 ms when loaded from disk (33x faster).
 In contrast to the node-specific Least Recently Used (LRU) memory cache, pinning **guarantees** this
 performance boost across the network. As a consequence wasmd can charge [discounted gas cost].
 
-::: tip :bulb: Tip
+:::tip
 
 Pinning is an incredibly valuable tool for chains to optimize gas costs.
 According to a [case study][neutron-case-study] by one of our subscribers, Neutron, pinning improved
@@ -20,7 +20,7 @@ the gas cost of their contracts somewhere between 15 and 50%!
  
 :::
 
-## The caches
+## Caches
 
 CosmWasm has 3 different caches for modules:
 
@@ -32,7 +32,7 @@ Both memory caches (**2.** and **3.**) work the same in terms of performance but
 are tracked separately. A pinned contract is never added to the standard `InMemoryCache`
 and the size of pinned contracts is not counted towards its cache size limit.
 
-## Pinning and Unpinning
+## Pinning and unpinning
 
 In order to add a contract to the `PinnedMemoryCache`, you need to call [`Cache::pin`] in Rust or
 `func (vm *VM) Pin(checksum Checksum) error` in wasmvm. To remove a contract from the cache use
@@ -69,11 +69,6 @@ These metrics are:
 - The number of times it was loaded from cache.
 
 That way you can better estimate which contracts are worth keeping pinned.
-
-## History
-
-Pinning was developed in 2021 (CosmWasm 0.14) for the Proof of Engagement consensus system
-of **Tgrade** which required certain contracts to be executed in every block.
 
 [neutron-case-study]: https://medium.com/confio/neutron-case-study-optimizing-gas-usage-with-contract-pinning-5970a109c706
 [`cache::pin`]: https://docs.rs/cosmwasm-vm/latest/cosmwasm_vm/struct.Cache.html#method.pin
